@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pingyougou-common/pingyougou-common.iml" filepath="$PROJECT_DIR$/pingyougou-common/pingyougou-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pingyougou-dao/pingyougou-dao.iml" filepath="$PROJECT_DIR$/pingyougou-dao/pingyougou-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pingyougou-manager-web/pingyougou-manager-web.iml" filepath="$PROJECT_DIR$/pingyougou-manager-web/pingyougou-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pingyougou-pojo/pingyougou-pojo.iml" filepath="$PROJECT_DIR$/pingyougou-pojo/pingyougou-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pingyougou-sellergoods-interface/pingyougou-sellergoods-interface.iml" filepath="$PROJECT_DIR$/pingyougou-sellergoods-interface/pingyougou-sellergoods-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pingyougou-sellergoods-service/pingyougou-sellergoods-service.iml" filepath="$PROJECT_DIR$/pingyougou-sellergoods-service/pingyougou-sellergoods-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pingyougou-shop-web/pingyougou-shop-web.iml" filepath="$PROJECT_DIR$/pingyougou-shop-web/pingyougou-shop-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-content-interface/pinyougou-content-interface.iml" filepath="$PROJECT_DIR$/pinyougou-content-interface/pinyougou-content-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-content-service/pinyougou-content-service.iml" filepath="$PROJECT_DIR$/pinyougou-content-service/pinyougou-content-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-parent.iml" filepath="$PROJECT_DIR$/pinyougou-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-portal-web/pinyougou-portal-web.iml" filepath="$PROJECT_DIR$/pinyougou-portal-web/pinyougou-portal-web.iml" />
+    </modules>
+  </component>
+</project>

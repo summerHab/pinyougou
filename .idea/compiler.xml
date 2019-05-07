@@ -16,6 +16,7 @@
         <module name="pinyougou-content-interface" />
         <module name="pinyougou-content-service" />
         <module name="pinyougou-portal-web" />
+        <module name="pinyougou-solr-until" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +31,7 @@
       <module name="pinyougou-content-service" target="1.8" />
       <module name="pinyougou-parent" target="1.8" />
       <module name="pinyougou-portal-web" target="1.8" />
+      <module name="pinyougou-solr-until" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

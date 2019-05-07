@@ -287,6 +287,7 @@
 		<module>pinyougou-content-interface</module>
 		<module>pinyougou-content-service</module>
         <module>pinyougou-portal-web</module>
-        
-    </modules>
+
+        <module>pinyougou-solr-until</module>
+	</modules>
 </project>

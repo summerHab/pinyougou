@@ -1,7 +1,10 @@
 package com.pinyougou.solrutil;
 
 import java.util.List;
+import java.util.Map;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -36,10 +39,12 @@ public class SolrUtil {
 		List<TbItem> items = itemMapper.selectByExample(example);
 		System.out.println("开始");
 		for(TbItem item:items){
-			System.out.println(item.getTitle());
+//			System.out.println(item.getTitle());
+			Map specMap = JSON.parseObject(item.getSpec(),Map.class);
+			System.out.println(specMap+"========");
+			item.setSpecMap(specMap);//给动态域字段赋值
 		}
-
-		solrTemplate.saveBean(items);
+		solrTemplate.saveBeans(items);
 		solrTemplate.commit();
 		System.out.println("结束");
 

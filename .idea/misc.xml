@@ -5,7 +5,9 @@
     <file type="web" url="file://$PROJECT_DIR$/pingyougou-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/pingyougou-shop-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-controller-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougou-portal-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-search-service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

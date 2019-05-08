@@ -289,5 +289,8 @@
         <module>pinyougou-portal-web</module>
 
         <module>pinyougou-solr-until</module>
-	</modules>
+		<module>pinyougou-search-interface</module>
+        <module>pinyougou-search-service</module>
+        <module>pinyougou-controller-service</module>
+    </modules>
 </project>

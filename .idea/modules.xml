@@ -11,8 +11,11 @@
       <module fileurl="file://$PROJECT_DIR$/pingyougou-shop-web/pingyougou-shop-web.iml" filepath="$PROJECT_DIR$/pingyougou-shop-web/pingyougou-shop-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-content-interface/pinyougou-content-interface.iml" filepath="$PROJECT_DIR$/pinyougou-content-interface/pinyougou-content-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-content-service/pinyougou-content-service.iml" filepath="$PROJECT_DIR$/pinyougou-content-service/pinyougou-content-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-controller-service/pinyougou-controller-service.iml" filepath="$PROJECT_DIR$/pinyougou-controller-service/pinyougou-controller-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-parent.iml" filepath="$PROJECT_DIR$/pinyougou-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-portal-web/pinyougou-portal-web.iml" filepath="$PROJECT_DIR$/pinyougou-portal-web/pinyougou-portal-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-search-interface/pinyougou-search-interface.iml" filepath="$PROJECT_DIR$/pinyougou-search-interface/pinyougou-search-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougou-search-service/pinyougou-search-service.iml" filepath="$PROJECT_DIR$/pinyougou-search-service/pinyougou-search-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-solr-until/pinyougou-solr-until.iml" filepath="$PROJECT_DIR$/pinyougou-solr-until/pinyougou-solr-until.iml" />
     </modules>
   </component>

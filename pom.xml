@@ -291,6 +291,7 @@
         <module>pinyougou-solr-until</module>
 		<module>pinyougou-search-interface</module>
         <module>pinyougou-search-service</module>
-        <module>pinyougou-controller-service</module>
-    </modules>
+		<module>pinyougou-search-web</module>
+
+	</modules>
 </project>

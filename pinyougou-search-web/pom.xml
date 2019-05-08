@@ -10,9 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.pingyougou</groupId>
-    <artifactId>pinyougou-search-service</artifactId>
+    <artifactId>pinyougou-search-web</artifactId>
     <packaging>war</packaging>
-
 
 
 
@@ -85,10 +84,15 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.pingyougou</groupId>
-            <artifactId>pingyougou-dao</artifactId>
-            <version>0.0.5-SNAPSHOT</version>
+            <groupId>org.csource.fastdfs</groupId>
+            <artifactId>fastdfs</artifactId>
         </dependency>
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
+
+
         <dependency>
             <groupId>com.pingyougou</groupId>
             <artifactId>pinyougou-search-interface</artifactId>
@@ -96,10 +100,11 @@
         </dependency>
         <dependency>
             <groupId>com.pingyougou</groupId>
-            <artifactId>pingyougou-common</artifactId>
+            <artifactId>pingyougou-pojo</artifactId>
             <version>0.0.5-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
@@ -109,11 +114,14 @@
                 <version>2.2</version>
                 <configuration>
                     <!-- 指定端口 -->
-                    <port>9004</port>
+                    <port>9104</port>
                     <!-- 请求路径 -->
                     <path>/</path>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+
 </project>
+

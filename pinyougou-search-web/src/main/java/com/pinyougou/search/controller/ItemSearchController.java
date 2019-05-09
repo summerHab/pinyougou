@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -16,8 +17,20 @@ public class ItemSearchController {
     @Reference
     private ItemSearchService itemSearchService;
 
+    /**
+     * solr搜索查询
+     * @param searchMap
+     * @return
+     */
     @RequestMapping("/serarch")
     public Map<String,Object> findSearch(@RequestBody Map<String,Object> searchMap){
-       return itemSearchService.search(searchMap);
+        System.out.println("5555");
+        return itemSearchService.search(searchMap);
     }
+
+//    @RequestMapping("/s")
+//    public Map<String,Object> findSearch(){
+//        System.out.println("6666");
+//        return null;
+//    }
 }

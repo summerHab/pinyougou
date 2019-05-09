@@ -31,7 +31,7 @@ public class ItemSearchServiceImpl implements ItemSearchService {
 
         Criteria criteria=new Criteria("item_keywords");
         query.addCriteria(criteria);
-        ScoredPage<TbItem> tbItems = solrTemplate.queryForPage(query, TbItem.class);
+        ScoredPage<TbItem> tbItems = solrTemplate.queryForPage(query,TbItem.class);
         List<TbItem> items = tbItems.getContent();//获取到对象
         map.put("rows",items);
         return map;

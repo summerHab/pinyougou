@@ -1,10 +1,13 @@
-app.controller("searchController",function(searchService,$scope){
+app.controller("searchController",function($scope,searchService){
 
-    $scope.search=function() {
-        alert("666");
+    //搜索
+    $scope.search=function(){
+
+
         searchService.search($scope.searchMap).success(
-            function(response) {
-                $scope.resultMap=response;
-        });
+            function(response){
+                $scope.resultMap=response;//搜索返回的结果
+            }
+        );
     }
 })

@@ -24,7 +24,7 @@ public class ItemSearchController {
      */
     @RequestMapping("/serarch")
     public Map<String,Object> findSearch(@RequestBody Map<String,Object> searchMap){
-        System.out.println("5555");
+
         return itemSearchService.search(searchMap);
     }
 

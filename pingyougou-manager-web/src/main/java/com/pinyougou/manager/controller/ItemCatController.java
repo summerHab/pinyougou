@@ -17,9 +17,10 @@ import entity.Result;
  */
 @RestController
 @RequestMapping("/itemCat")
+
 public class ItemCatController {
 
-	@Reference
+	@Reference(timeout = 8000)
 	private ItemCatService itemCatService;
 	
 	/**
@@ -98,10 +99,10 @@ public class ItemCatController {
 			return new Result(false, "删除失败");
 		}
 	}
-	
+
 		/**
 	 * 查询+分页
-	 * @param brand
+	 * @param itemCat
 	 * @param page
 	 * @param rows
 	 * @return
@@ -117,10 +118,7 @@ public class ItemCatController {
 	 */
 	@RequestMapping("/findByParentId")
 	public List<TbItemCat> findByParentId(Long parentId){
-		
-		List<TbItemCat> findByParentIds = itemCatService.findByParentId(parentId);
-		
-
-		return findByParentIds;
+		//List<TbItemCat> findByParentIds = itemCatService.findByParentId(parentId);
+		return itemCatService.findByParentId(parentId);
 	}
 }

@@ -94,6 +94,11 @@
 		<artifactId>pingyougou-pojo</artifactId>
 		<version>0.0.5-SNAPSHOT</version>
 	</dependency>
+	<dependency>
+		<groupId>com.pingyougou</groupId>
+		<artifactId>pingyougou-common</artifactId>
+		<version>0.0.5-SNAPSHOT</version>
+	</dependency>
 </dependencies>
   
   <build>  

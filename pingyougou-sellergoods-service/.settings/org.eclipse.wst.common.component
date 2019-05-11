@@ -13,6 +13,9 @@
         <dependent-module archiveName="pingyougou-pojo-0.0.5-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pingyougou-pojo/pingyougou-pojo">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="pingyougou-common-0.0.5-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pingyougou-common/pingyougou-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="pingyougou-sellergoods-service"/>
         <property name="java-output-path" value="/pingyougou-sellergoods-service/target/classes"/>
     </wb-module>

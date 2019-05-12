@@ -117,10 +117,10 @@ app.controller("searchController",function($scope,searchService,$location){
         return false;
     }
 
-    // //加载关键字
-    // $scope.loadkeywords=function(){
-    //     $scope.searchMap.keywords=$location.search()['keywords'];
-    //    // $scope.search();//查询
-    // }
+    //加载关键字
+    $scope.loadkeywords=function(){
+        $scope.searchMap.keywords=$location.search()['keywords'];
+        $scope.search();//查询
+    }
 
 })

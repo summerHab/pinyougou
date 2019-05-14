@@ -1,17 +1,12 @@
 package com.pinyougou.sellergoods.service.impl;
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.pinyougou.mapper.TbBrandMapper;
@@ -291,8 +286,18 @@ public class GoodsServiceImpl implements GoodsService {
 				TbGoods goods = goodsMapper.selectByPrimaryKey(id);
 				goods.setAuditStatus(status);
 				goodsMapper.updateByPrimaryKey(goods);
-				
 			}
 		}
-	
+
+	@Override
+	public List<TbItem> findItemListByGoodsIdandStatus(Long[] goodsIds, String status){
+
+		TbItemExample example=new TbItemExample();
+		TbItemExample.Criteria criteria = example.createCriteria();
+		criteria.andGoodsIdIn(Arrays.asList(goodsIds));
+		criteria.andStatusEqualTo(status);
+		return tbItemMapper.selectByExample(example);
+	}
+
+
 }

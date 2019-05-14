@@ -15,7 +15,7 @@ import org.springframework.data.solr.core.query.result.*;
 
 import java.util.*;
 
-@Service(timeout = 5000)
+@Service(timeout = 50000)
 public class ItemSearchServiceImpl implements ItemSearchService {
 
     @Autowired
@@ -57,12 +57,29 @@ public class ItemSearchServiceImpl implements ItemSearchService {
                 map.putAll(searchBrandAndSpecList(categoryList.get(0)));
             }
         }
-
-
         return map;
+    }
+
+    @Override
+    public void importList(List list) {
+
+        solrTemplate.saveBeans(list);
+        solrTemplate.commit();
+    }
 
 
-
+    /**
+     * 删除数据
+     * @param goodsIdList
+     */
+    @Override
+    public void deleteByGoodsIds(List goodsIdList) {
+        System.out.println("删除商品 ID"+goodsIdList);
+        Query query=new SimpleQuery();
+        Criteria criteria=new Criteria("item_goodsid").in(goodsIdList);
+        query.addCriteria(criteria);
+        solrTemplate.delete(query);
+        solrTemplate.commit();
     }
 
     /**
@@ -216,6 +233,5 @@ public class ItemSearchServiceImpl implements ItemSearchService {
             map.put("specList", specList);
         }
         return map;
-
     }
 }

@@ -31,7 +31,7 @@ app.service('goodsService',function($http){
 	}    	
 	//更新状态
 	this.updatestatus=function(ids,status){
-		return $http.get("../goods/updatestatus.do?ids="+ids+"&status"+status);
+		return $http.get("../goods/updatestatus.do?ids="+ids+"&status="+status);
 	}
 	
 });

@@ -93,6 +93,7 @@ app.controller('goodsController' ,function($scope,$controller,itemCatService ,go
 	}
 	//修该status状态
 	$scope.updateStatus=function(status){
+
 		goodsService.updatestatus($scope.selectIds,status).success(
 				function(response){
 					if(response.success){

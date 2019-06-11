@@ -295,6 +295,7 @@
         <module>pinyougou-page-interface</module>
 		<module>pinyougou-page-service</module>
 		<module>pinyougou-pages-web</module>
+		<module>../springjms_producer</module>
 
 
 	</modules>

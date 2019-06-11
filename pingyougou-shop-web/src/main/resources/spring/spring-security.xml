@@ -14,10 +14,10 @@
 	<http pattern="/plugins/**" security="none"></http>
 	<http pattern="/*.html" security="none"></http>
 	<http pattern="/seller/add.do" security="none"></http>
+	<http pattern="/shoplogin.html" security="none"></http>
 	
 	<!-- 拦截规则 -->
 	<http use-expressions="false">
-	
 		<intercept-url pattern="/**" access="ROLE_SELLER"/>
 		<!-- login-page配置的是指定登录页面。,default-target-url是登录成功后默认跳转的页面,authentication-failure-url -->
 		<form-login login-page="/shoplogin.html" 

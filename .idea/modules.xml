@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/pinyougou-search-service/pinyougou-search-service.iml" filepath="$PROJECT_DIR$/pinyougou-search-service/pinyougou-search-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-search-web/pinyougou-search-web.iml" filepath="$PROJECT_DIR$/pinyougou-search-web/pinyougou-search-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougou-solr-until/pinyougou-solr-until.iml" filepath="$PROJECT_DIR$/pinyougou-solr-until/pinyougou-solr-until.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springjms_producer/springjms_producer.iml" filepath="$PROJECT_DIR$/../springjms_producer/springjms_producer.iml" />
     </modules>
   </component>
 </project>
